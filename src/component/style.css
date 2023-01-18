@@ -1,0 +1,264 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+   
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+    font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif; 
+  
+}
+:root{
+    --button-join-color: #ffffff;
+    --button-join-background: #000000;
+    --hover-text-color: #00754A;
+    --hover-grey-color: #d1d2d3;
+    --hover-dark-color: #4b4d4e;
+    --hover-dark-background-color: #4b4d4e;
+    --starbucks-rewards-header: #1E3932;
+    --starbucks-rewards-text: #F5F6F6;
+   --background-rewards-color: #D4E9E2;
+    --form-text-color:  #4b4d4e;
+    --form-p-color:  #727475;
+    --font-h1 : 2rem;
+    --letter-spacing: 0.1rem;
+    --font-weigth-middle: 500;
+    --button-crate-acount: #00754A;
+    --button-crate-acount-active: #4ca383;
+}
+.navbar{
+    width: 100%;
+}
+.nav{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+    white-space: nowrap;
+  
+}
+
+
+.nav-1 .mainlogo{
+    width: 50px;
+}
+
+
+ .nav-1 ul,
+ .nav-2 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+   
+} 
+
+.nav-1 ul li a:hover {
+    color: var(--hover-text-color)
+
+}
+
+.nav-2 button{
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 0.1px solid black;
+    cursor: pointer
+}
+.nav-2 .sign-btn:hover{
+   background: var(--hover-grey-color);
+}
+.nav-2 .join-btn{
+    background: var(--button-join-background);
+    color:var(--button-join-color);
+   
+}
+.nav-2 .join-btn:hover{
+    background: var(--hover-dark-color);
+   
+}
+
+.rewards-header{
+    
+    width: 100%;
+    display: flex;
+    padding-left: 15%;
+    align-items: center;
+    background-color: var(--starbucks-rewards-header);
+    height: 40px;
+
+}
+.rewards-header h4{
+    color: var( --starbucks-rewards-text);
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+}
+.rewards-background{
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    background: var(--background-rewards-color);
+}
+.text-align-rewards{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 40%;
+    top: 15%;
+    left: 10%;
+    gap: 1rem;
+}
+
+.text-align-rewards h1{
+    font-size:var(--font-h1) ;
+    letter-spacing: var(--letter-spacing);
+}
+.text-align-rewards span {
+    font-weight:  var(--font-weigth-middle)
+}
+.text-align-rewards button{
+    width: 30%;
+    border-radius: 20px;
+    border: none ;
+    padding: 0.25rem;
+    
+    background: var(--hover-text-color);
+
+}
+
+.text-align-rewards button a{
+    color: var(--starbucks-rewards-text);
+}
+
+.getting-start{
+   margin-top: 2rem;
+   display: flex;
+   flex-direction: column;
+   
+}
+.getting-start .text-div h2{
+    font-size: 1.5rem;
+}
+
+.getting-start .text-div h6{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: var(--font-weigth-middle);
+}
+
+.getting-start .create-acount{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.getting-start .create-acount .create-step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 25%;
+
+
+}
+.getting-start .create-acount .create-step span{
+    font-weight: var(--font-weigth-middle);
+}
+.getting-start .create-acount .create-step span a{
+    color: var(--hover-text-color);
+} 
+
+.getting-start .create-acount .create-step h2{
+    font-size: 1.5rem;
+    border: 2px solid green;
+    padding:  0.5rem 1rem;
+    border-radius: 100%;
+    color: var(--hover-text-color);
+}
+
+.form-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+
+}
+
+.form-main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  
+}
+.form-main h1{
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+.form-main h3{
+ color: var(--form-text-color) ;
+ font-size: 0.9rem;
+ margin-bottom: 1rem;
+}
+.form-main p{
+    font-size: 0.8rem;
+    color: var(--form-p-color);
+}
+.form-main form{
+    padding: 5rem;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;;
+}
+.form-main form .label-input input {
+   width: 95%;
+  padding: 0.5rem 1rem; 
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+::placeholder{
+    padding: 1rem;
+}
+.checkbox-input{
+    display: flex;
+    flex-direction: row;
+    gap: 0.9rem;
+    margin-top: 3rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.form-main button{
+ position: relative;
+ cursor: pointer;
+ margin-top: 5rem;
+ border-radius: 20px;
+ padding: 0.9rem 1.2rem;
+ margin-left: 12rem;
+ white-space: nowrap;
+border: none;
+
+ background: var(--button-crate-acount);
+ color: var(--button-join-color);
+}
+
+.form-main button:active{
+    background: var(--button-crate-acount-active);
+    top: 5px
+}
+
+.active-btn{
+   color: var(--button-crate-acount)
+}
